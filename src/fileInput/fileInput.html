@@ -29,11 +29,14 @@
     }
   </style>
 
-  <div class="parent">
-    <div class="box">box</div>
-  </div>
-
-  <button class='btn'></button>
+  <form method="post" enctype="multipart/form-data">
+    <div class="button">
+      <label for="chooseFile">
+        👉 CLICK HERE! 👈
+      </label>
+    </div>
+    <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+  </form>
 
   <script type='text/javascript' src='index.js'></script>
   <script>
